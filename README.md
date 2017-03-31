@@ -6,4 +6,4 @@ Topic: Knowing basics of Django
 Research fields: Any
 Source: GitHub repo and Google
 
-^ This tutorial is mostly a translation of the existing Django-in-Bengali^
+*This tutorial is mostly a translation of the existing Django-in-Bengali*
