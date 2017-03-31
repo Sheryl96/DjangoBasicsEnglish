@@ -5,3 +5,5 @@ Django is a free and open source web application framework written in Python and
 Topic: Knowing basics of Django
 Research fields: Any
 Source: GitHub repo and Google
+
+^ This tutorial is mostly a translation of the existing Django-in-Bengali^
