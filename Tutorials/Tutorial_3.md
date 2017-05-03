@@ -1,4 +1,4 @@
-#Tutorial III
+# Tutorial III
 
 ## Introduction to Views
 
@@ -11,7 +11,7 @@ For example, consider the poll app -
 * Result page will be displayed where a poll result will be displayed 
 * On another page user can view the submitted result. 
 
-##Creating views
+## Creating views
 
 So let's write our first view and see how it works. Open the `polls \ views.py` and enter the code below - 
 
@@ -50,7 +50,7 @@ Now open the file 'mysite / urls.py` and add the following code -
 	
 Here we are going to tell Django to have the 'poll' at the beginning of the URL, to load the URLconfig from the `polls.urls` module. 
 
-##Add some more views 
+## Add some more views 
 
 Always open the 'polls / views.py` file and add the following lines -
 
@@ -92,7 +92,7 @@ In order to get output from 'results () `and` vote ()', respectively.
 
 *Note here that we used regular expressions to indicate URL patterns. For more information about regular expressions, you can visit Wikipedia - <a href="http://en.wikipedia.org/wiki/Regular_expression"> http://en.wikipedia.org/wiki/Regular_expression </a> .* 
 
-##Creating an Effective View  
+## Creating an Effective View  
 
 The previous views were not actually doing anything. Just one line text as output. In 'views', write the following -
 
