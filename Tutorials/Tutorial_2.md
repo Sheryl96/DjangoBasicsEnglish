@@ -1,10 +1,10 @@
-#Tutorial II
+# Tutorial II
 
-##Introduction to Django admin 
+## Introduction to Django admin 
 
 Among Django’s popular features, its Admin app is quite popular. This makes any site administration much easier. In thither is a nice interface created to do all the data operations (CRUD == Create Read Update Delete) without any coding. You can use the interface to input new data in the database, view, modify or delete old data easily. 
 
-##Creating Admin application 
+## Creating Admin application 
 
 The Django admin app can be found in the django.contrib.admin package. So we need to add this application to the settings.py's INSTALLED_APPS section. We saw the example of how to do this work in Tutorial I. 
 
@@ -35,7 +35,7 @@ We've added our definitions to these urlpatterns as -
 
 This means if URL is requested for admin, we can import the required url in our urlpatterns using the *include* easily. Then Django admin defines admin.site.urls
 
-##Run development server
+## Run development server
 
 To run the admin app, we have to launch the development server. The command has been shown -
 	python manage.py runserver
@@ -50,7 +50,7 @@ If you have done everything right, you will get an interface like this -
 
 And if such a screen does not appear to show an error message again, check the steps again. 
 
-##Login to admin
+## Login to admin
 
 After adding sync admin to Django admin app, we created a super user. To access the admin panel, use that account's username and password. If a super user is not created at that time or if you need a new account for some reason, then run this command to create a new super user - 
 	python manage.py createsuperuser
@@ -59,7 +59,7 @@ After logging in, we will get a screen like this -
 ![admin02](https://cloud.githubusercontent.com/assets/20215525/25673029/93100978-3053-11e7-81ba-2c3ae6566695.png)
 
 
-##Add own models
+## Add own models
 
 All admin code related applications should be kept in admin.py. In this, we can tell the admin application what we want to do with our application in the admin panel.
 
@@ -73,6 +73,6 @@ The poll model for our voting needs the Admin Interface. So we will use this cod
 In this code we actually tell the Django admin to register our poll model on the admin site. 
 
 
-##Summary 
+## Summary 
 
 What we have seen so far is how easily our data model can be used from the Django admin. Django admin is also quite customisable. Using various options, it can be arranged according to your own wish. 
