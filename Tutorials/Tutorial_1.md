@@ -1,6 +1,6 @@
-#Tutorial I
+# Tutorial I
 
-##Create new project
+## Create new project
 
 We used the *django-admin.py* tool to create a new project. Use this command in the terminal -
 
@@ -28,7 +28,7 @@ Insight to the created project :
 * mysite / wsgi.py: This file is useful when using WSGI Compatible Server. We will look at the duties of this file when we talk about the development.
 
 
-##Launch the development server
+## Launch the development server
 
 Launching of the application can be done without the need of any other server, as follows -
 
@@ -50,9 +50,10 @@ Enter the *http://127.0.0.1:8000/* address in the browser,then the home page of 
 	python manage.py runserver 8080
 
 
-##Setting up the database
+## Setting up the database
 
 If we open mysite / settings.py file in the text editor, we will see that there is a separate section for the database, as -
+
 	DATABASES = {
 		'default': {
     		'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
@@ -86,7 +87,7 @@ Example -
 		}
 	}
 
-##Syncdb - Database synchronization
+## Syncdb - Database synchronization
 
 A Django site or project is composed of many small applications. These applications are added to *settings.py* INSTALLED_APPS section. By default, there are many applications added to the list. Many applications store data in the database. So they need to make tables. The sync_b command of *manage.py* does this only for us. We will run in the terminal -
 
@@ -94,7 +95,7 @@ A Django site or project is composed of many small applications. These applicati
 
 *Note: Django will create tables for just the INSTALLED_APPS list of applications. Run syncdb by adding all the applications you need. But after creating a table and then removing it from the application list, the jango will not be removed from that table database.*
 
-##Project vs Application
+## Project vs Application
 
 We have created a project earlier. A project is a group of one or more applications. We share a Django site or over all of its project function in small units. Then we develop different applications for each different feature. Suppose developing the site for a community. You will need -
 
@@ -104,7 +105,7 @@ We have created a project earlier. A project is a group of one or more applicati
 
 In Java, we will create separate applications for each function. But in Django, all the code works in the same place, i.e. in one place. Django applications are a lot of plug and play. You just add to the settings of the INSTALLED_APPS section of the original application, once syncdb and then add or import routes to urls.py. Due to this type of flexibility, it is fun and less time consuming to work in Django.
 
-##Create own applications 
+## Create own applications 
 
 We will create the application in conjunction with the Official Tutorial of Django. Concept of applications is quite simple. "poll" is the name of the application.
 To create an application's structure, use the manage.py startup command -
@@ -124,7 +125,7 @@ Here -
 * tests.py : Will keep test cases for unit testing
 * views.py : Django is a little different from the traditional MVC framework views.py. Instead of Controller we use View in Django. In this file views are created.
 
-##MVC vs MTV
+## MVC vs MTV
 
 Components of the MVC framework are:
 
@@ -138,7 +139,7 @@ We will follow MTV (Model, Template, View) pattern in Django. Components of the 
 * View : is where templates are there
 * Controller: is replaced by View
 
-##Creating Model
+## Creating Model
 
 Django's philosophy all application data is in a central model. Now we’ll define your models – essentially, your database layout, with additional metadata.Edit the polls/models.py file so it looks like this: -
 
@@ -187,6 +188,7 @@ Then create the first poll -
 	>>> p = Poll(question="What's new?", pub_date=timezone.now())
 	>>> p.save()
 Django will save the object in the database. Now let's see the various attributes of the object -
+
 	>>> p.id
 		1
 	>>> p.question
@@ -194,9 +196,11 @@ Django will save the object in the database. Now let's see the various attribute
 	>>> p.pub_date
 		datetime.datetime(2012, 2, 26, 13, 0, 0, 775217, tzinfo=<UTC>)
 Now let's make some changes -
+
 	>>> p.question = "What's up?"
 	>>> p.save()
 Now again the list of all poll objects is not seen -
+
 	>>> Poll.objects.all()
 		[<Poll: Poll object>]
 This way we can easily create and use models. Further, details on the model is explainedgit.
