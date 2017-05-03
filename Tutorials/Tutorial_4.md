@@ -1,6 +1,6 @@
-#Tutorial IV
+# Tutorial IV
 
-##Creating Django Form 
+## Creating Django Form 
 
 Those who have HTML knowledge, they are already familiar with `<form>`. We can see how we can handle form data in Django. Let's add code in `poll / detail.html` template -
 
